@@ -1,0 +1,58 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+div:first-of-type {
+    display: table;
+    margin: auto;
+}
+
+input {
+    color: gray;
+    margin: 16px;
+    padding: 4px 8px;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+}
+
+input:focus {
+    border-color: #55adee;
+    border-width: 2px;
+    transition: border-color .1s ease-in;
+}
+
+button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+i {
+    font-size: 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+img:last-of-type {
+    margin: 68px auto;
+}
+
+.vertical {
+    vertical-align: middle;
+    display: table-cell;
+}
