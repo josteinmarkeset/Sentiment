@@ -12,10 +12,16 @@
 <body>
     <img src="img/twitter_logo_small.png" alt="">
     <h1>Twitter Sentiment Analysis</h1>
+    <p>Please refrain from using any non standard characters</p>
     <div>
-        <input class="vertical" type="text" placeholder="Enter topic here...">
-        <button><i class='fas fa-search vertical'></i></button>        
+        <input id="inputText" class="vertical" type="text" placeholder="Enter a keyword">
+        <button id="predict" disabled><i class='fas fa-search vertical'></i></button>        
     </div>    
-    <img src="img/positive.png" alt="">
+    <img id="sentimentImage" src="img/positive.png" alt="">
+    <h1 id="positivityText">Positivity</h1>
+    <h1 id="positivityMeter"></h1>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.3/dist/tf.min.js"></script>
+<script src="codebird.js"></script>
+<script src="index.js"></script>
 </html>
